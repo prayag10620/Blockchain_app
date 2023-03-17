@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class = "form">
+    <form action="{{ url_for('get_block_data')}}" method="post">
+        <label for="block_number">Block Number:</label>
+        <input type="text" id="block_number" name="block_number" >
+    
+        <label for="block_hash">block_hash:</label>
+        <input type="text" id="block_hash" name="block_hash" >
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+</div>
+
+
+{% endblock %}

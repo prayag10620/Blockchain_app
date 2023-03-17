@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class = "form">
+
+    <form action="{{ url_for('get_transaction')}}" method="post">
+        <label for="transaction_hash">Transaction Hash:</label>
+        <input type="text" id="transaction_hash" name="transaction_hash" >
+    
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+
+{% endblock %}
